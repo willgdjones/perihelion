@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perihelion</title>
+    <meta name="description" content="AI consultancy. We help companies ship faster with agents.">
+    <style>
+        :root {
+            --text-color: #111;
+            --background-color: #fffff8;
+            --link-color: #111;
+            --side-note-color: #666;
+        }
+
+        html { font-size: 15px; }
+
+        body {
+            font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 43rem;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            width: 100%;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--text-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .home, .nav-links a {
+            font-weight: bold;
+            letter-spacing: 0.03em;
+        }
+
+        nav .home { font-size: 1.2rem; }
+
+        .nav-links a {
+            margin-left: 2rem;
+            font-size: 1.1rem;
+            border-bottom: none;
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+
+        p { margin-bottom: 1.4rem; }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover { border-bottom-color: var(--link-color); }
+
+        p a { border-bottom: 1px solid var(--link-color); }
+        p a:hover { opacity: 0.7; }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: var(--side-note-color);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .intro { font-size: 1.05rem; }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .services li:before {
+            content: "\2014";
+            position: absolute;
+            left: 0;
+        }
+
+        .project {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project:last-child { border-bottom: none; }
+
+        .project h3 a { border-bottom: none; }
+        .project h3 a:hover { border-bottom: 1px solid var(--link-color); }
+
+        .project-meta {
+            color: var(--side-note-color);
+            font-size: 0.85rem;
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .project p { font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+        .clients {
+            margin: 3rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid var(--text-color);
+        }
+
+        .clients p {
+            color: var(--side-note-color);
+            font-style: italic;
+        }
+
+        .contact {
+            margin: 3rem 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--text-color);
+        }
+
+        .contact-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-links li { margin-bottom: 0.5rem; }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+        }
+
+        footer p {
+            color: var(--side-note-color);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 1rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            nav { flex-direction: column; text-align: center; }
+            .nav-links { margin-top: 1rem; }
+            .nav-links a { margin: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/" class="home">Perihelion</a>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Perihelion</h1>
+                <p class="tagline">AI consultancy for companies that want to ship.</p>
+                <p class="intro">
+                    Perihelion is run by <a href="https://willgdjones.com">Will Jones</a>, formerly CTO and cofounder of <a href="https://sanogenetics.com">Sano Genetics</a>. After 7 years building a 20-strong engineering team in healthtech, I now help companies build AI-powered products and internal tools at speed.
+                </p>
+                <p class="intro">
+                    I work with startups, scale-ups and enterprise teams across fintech, healthtech and SaaS. If you can describe what you need, I can probably build it faster than you'd expect.
+                </p>
+            </div>
+
+            <div class="services">
+                <h2>What I do</h2>
+                <ul>
+                    <li>AI product engineering - from prototype to production</li>
+                    <li>Agent systems - autonomous workflows, tool use, multi-agent architectures</li>
+                    <li>Early-stage CTO coaching - hiring, culture, technical strategy</li>
+                    <li>AI integration - helping existing teams adopt AI into their stack</li>
+                </ul>
+            </div>
+
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <h3>&#x1F47B; <a href="https://github.com/willgdjones/boggart">Boggart</a></h3>
+                    <p class="project-meta">2026 &middot; AI &middot; Personalisation &middot; Advertising</p>
+                    <p>Hyper-personalised content generator. Ingests your digital footprint via Google services, builds a psychological profile with Claude, then generates tailored advertising - copy, images, and video. Because the best ad is the one that actually understands you.</p>
+                </div>
+
+                <div class="project">
+                    <h3>&#x1F9EA; <a href="https://distillation.app">Distillation</a></h3>
+                    <p class="project-meta">2026 &middot; AI &middot; Knowledge synthesis</p>
+                    <p>Personalised knowledge synthesis. Consolidates information across the entire internet and synthesises it into pristine, information-rich knowledge tailored to your interests and goals. What you choose to read becomes more important than how much you read.</p>
+                </div>
+
+                <div class="project">
+                    <h3>&#x1F916; <a href="https://github.com/willgdjones/agentfix">AgentFix</a></h3>
+                    <p class="project-meta">2025 &middot; Developer tools &middot; AI</p>
+                    <p>Auto-fix errors in your dev server as they happen using AI. Watches your terminal, catches the error, feeds it to Claude or Cursor, and applies the patch. Zero context-switching. Built at the Build With Cursor hackathon.</p>
+                </div>
+
+                <div class="project">
+                    <h3>&#x1F91D; <a href="https://github.com/willgdjones/thielsecrets">Thiel Secrets</a></h3>
+                    <p class="project-meta">2025 &middot; Social &middot; AI matching</p>
+                    <p>A matching app built around Peter Thiel's contrarian question: "What important truth do very few people agree with you on?" Share your secret, swipe through others, get matched with people who see the world the same way.</p>
+                </div>
+
+                <div class="project">
+                    <h3>&#x1F198; <a href="https://github.com/willgdjones/helpme">HelpMe AI</a></h3>
+                    <p class="project-meta">2025 &middot; Voice &middot; OCR &middot; AI</p>
+                    <p>Voice and image-powered AI assistant. Transcribes speech with Whisper, reads screenshots with OCR, and answers questions using GPT. Built for hands-free, eyes-free help.</p>
+                </div>
+
+                <div class="project">
+                    <h3>&#x1F4DD; <a href="https://github.com/willgdjones/doctweak">DocTweak</a></h3>
+                    <p class="project-meta">2025 &middot; Google Docs &middot; AI</p>
+                    <p>A Google Docs add-on that lets you rewrite, edit, and transform text with AI directly in the sidebar. Select text, describe what you want, get it back instantly.</p>
+                </div>
+            </div>
+
+            <div class="clients">
+                <h2>Clients</h2>
+                <p>Working with fintechs, healthtechs and startups across the UK. If you're building something interesting and need experienced AI engineering, I'd love to chat.</p>
+            </div>
+
+            <div class="contact" id="contact">
+                <h2>Get in touch</h2>
+                <ul class="contact-links">
+                    <li>Email: williamgdjones[at]gmail.com</li>
+                    <li>X: <a href="https://x.com/willgdjones">@willgdjones</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/willgdjones">willgdjones</a></li>
+                    <li>GitHub: <a href="https://github.com/willgdjones">willgdjones</a></li>
+                </ul>
+                <p><a href="https://calendar.app.google/ftsiR9P5kLcRSNHC7">Book a 30-minute call</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Perihelion Limited. Company number 16927629.</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.links;
+            for (var i = 0; i < links.length; i++) {
+                if (links[i].hostname != window.location.hostname) {
+                    links[i].target = '_blank';
+                    links[i].rel = 'noopener noreferrer';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
