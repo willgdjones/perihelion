@@ -1,0 +1,37 @@
+# Site settings
+title: "Perihelion"
+description: "AI consultancy. We help companies ship faster with agents."
+baseurl: ""
+url: "https://perihelion.limited"
+author: "Perihelion Limited"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# SEO settings
+social:
+  x: https://x.com/willgdjones
+  linkedin: https://www.linkedin.com/in/willgdjones
+  github: https://github.com/willgdjones
+
+# Plugin settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
